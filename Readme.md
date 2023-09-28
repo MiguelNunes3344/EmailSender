@@ -6,7 +6,6 @@ Este é um projeto de exemplo que demonstra como registrar um usuário e enviar 
 
 - Java 17
 - Spring Boot
-- Spring Security
 - Spring Data JPA
 - Google SMTP (para envio de email)
 - H2 Database
