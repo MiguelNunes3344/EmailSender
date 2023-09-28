@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.email.emailSender.ClientEntity;
 import com.email.emailSender.dto.ClientDto;
@@ -40,6 +41,11 @@ public class ClientController {
 		client.setVerified(true);
 		clientService.updateVerify(client);
 		return "Your account has been verified";
+	}
+	@GetMapping("/register")
+	public ModelAndView index() {
+		ModelAndView index = new ModelAndView("index");
+		return index;
 	}
 
 }
