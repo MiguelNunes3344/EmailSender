@@ -1,6 +1,5 @@
 package com.email.emailSender.controller;
 
-import javax.validation.Valid;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +17,8 @@ import com.email.emailSender.ClientEntity;
 import com.email.emailSender.dto.ClientDto;
 import com.email.emailSender.services.ClientService;
 import com.email.emailSender.services.EmailService;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping(value = "client")

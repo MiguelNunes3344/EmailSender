@@ -1,6 +1,6 @@
 package com.email.emailSender.controller;
 
-import javax.validation.Valid;
+
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.email.emailSender.EmailEntity;
 import com.email.emailSender.dto.EmailDto;
 import com.email.emailSender.services.EmailService;
+
+import jakarta.validation.Valid;
 
 @RestController
 public class EmailController {
